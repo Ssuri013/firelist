@@ -30,3 +30,8 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
