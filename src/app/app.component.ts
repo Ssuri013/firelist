@@ -33,6 +33,8 @@ export class AppComponent {
   }
   addPost(){
     this.afs.collection('posts').add({'title': this.title, content: this.content });
+    this.title ="";
+    this.content = "";
   }
 
    ngOnInit(){

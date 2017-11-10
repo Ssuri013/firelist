@@ -1,23 +1,14 @@
 .jumbotron{
-
+  border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
-  text-align: center;
+  padding-left: 15px;
   font-family: arial;
   display:block;
-
-
 }
 
-.top{
-  height:900px;
-  width: inherit;
-  position: relative;
-  align-content: center;
-  background-color: #000000;
-}
 .center {
-    height: 900px;
+    height: 100%;
     position: relative;
     border: 3px solid green;
 }
