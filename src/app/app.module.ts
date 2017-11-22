@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { FormsModule } from '@angular/forms';
+import { TodaysTasksComponent } from './todays-tasks/todays-tasks.component';
 
 
 
@@ -22,7 +23,8 @@ var firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodaysTasksComponent
   ],
   imports: [
     BrowserModule,
