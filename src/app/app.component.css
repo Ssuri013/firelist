@@ -1,4 +1,4 @@
-.jumbotron{
+/*.jumbotron{
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
@@ -25,4 +25,42 @@ input[type=text] {
     background: transparent;
     border: none;
     border-bottom: 1px solid #000000;
+}*/
+
+.wrapper{
+    margin: auto;
+    width:60%;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+
+}
+.header{
+  margin: auto;
+  width:60%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.form{
+  background: yellow;
+  vertical-align: middle;
+  margin: auto;
+  width: 90%;
+
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  height: 50px;
+}
+.form button{
+  background: rgba(	92, 184, 92,0.8);
+}
+
+.content{
+  background: #dcdcdc;
+  height:200px;
+}
+.content h2{
+  padding:40px;
 }
