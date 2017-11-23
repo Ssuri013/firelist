@@ -32,7 +32,8 @@ export class AppComponent {
     this.afs.doc('posts/'+postId).delete();
   }
   addPost(){
-    this.afs.collection('posts').add({'title': this.title, content: this.content });
+    console.log("reached addPost");
+    this.afs.collection('posts').add({'title':'undefined', 'content': this.content});
     this.title ="";
     this.content = "";
   }

@@ -29,8 +29,8 @@ input[type=text] {
 
 .wrapper{
     margin: auto;
-    width:60%;
-    margin-top: 100px;
+    width:50%;
+    margin-top: 40px;
     border-radius: 20px;
     box-shadow: 0 0 26px rgba(0, 0, 0, 0.13);
     overflow: hidden;
@@ -39,22 +39,32 @@ input[type=text] {
 .header{
   margin: auto;
   width:60%;
-  height: 400px;
+  height: 200px;
   display: flex;
   align-items: center;
 }
 .form{
-  background: yellow;
+
   vertical-align: middle;
   margin: auto;
   width: 90%;
-
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
   border-radius: 5px;
   height: 50px;
+  display: flex;
+  align-items: center;
 }
 .form button{
-  background: rgba(	92, 184, 92,0.8);
+  width:10%;
+  margin: auto;
+  background: #7bcbc4;
+  width:10%;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  outline: none;
 }
 
 .content{
@@ -63,4 +73,16 @@ input[type=text] {
 }
 .content h2{
   padding:40px;
+}
+
+.form input{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0px;
+  outline: none;
+  align-self: flex-end;
+  margin-left: 10px;
+  width: 80%;
+  height: 40px;
+
 }
