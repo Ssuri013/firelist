@@ -33,13 +33,28 @@
 <div class="wrapper">
   <div class="header">
     <div class="form">
-      <input type="text"  [(ngModel)]="content" name="content" id="formGroupTitleInput" placeholder="add a todo" autofocus >
+      <input type="text"  [(ngModel)]="content" name="content" (keyup.enter)="addPost()" id="formGroupTitleInput" placeholder="add a todo" autofocus >
       <button type="button" name="button" (click)="addPost()" >    <i class='fa fa-plus'></i></button>
     </div>
   </div>
   <div class="content">
     <div class="title">
       <h2>To Do List</h2>
+      <ul >
+        <li *ngFor="let post of posts | async">
+
+
+
+         {{post.data.content}}
+
+                     <a href="#" (click)="deletePost(post.id)">
+         <span class="glyphicon glyphicon-trash" style="float: right"></span></a>
+         <div class="checkbox" style="display: inline; float: right ; margin: 0px;">
+    <label><input type="checkbox" value="">Mark as done &nbsp;</label>
+    </div>
+       </li>
+      </ul>
+
     </div>
 
 
