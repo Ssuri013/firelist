@@ -1,0 +1,62 @@
+<!--
+<div class="center">
+  <div class="jumbotron jumbotron-fluid container">
+    <div class="row">
+      <div class="conatiner col-4">
+        <form>
+          <div class="form-group">
+            <label for="formGroupTitleInput">Title</label>
+            <input type="text" [(ngModel)]="title" name="title" class="form-control" id="formGroupTitleInput" placeholder="Title..">
+          </div>
+          <div class="form-group">
+            <label for="formGroupContentInput" style="align:left">Content</label>
+            <input [(ngModel)]="content" name="content" type="text" class="form-control" id="formGroupContentInput" placeholder="Content....">
+          </div>
+          <input type="submit"  class="btn btn-success"value="Add a Post" (click)="addPost()">
+        </form>
+        </div>
+      <div class="conatiner col-8 " style="background:#ffffff; box-shadow: ">
+        <ul *ngFor="let post of posts | async">
+          <li  >
+             <strong>{{post.data.title}}</strong>
+             <a href="#" (click)="deletePost(post.id)">delete
+               <span class="glyphicon glyphicon-trash"></span></a>
+
+             <br/>
+             {{post.data.content}}</li>
+        </ ul>
+      </div>
+    </div>
+    </div>
+</div> -->
+
+<div class="wrapper">
+  <div class="header">
+    <div class="form">
+      <input type="text"  [(ngModel)]="content" name="content" (keyup.enter)="addPost()" id="formGroupTitleInput" placeholder="add a todo" autofocus >
+      <button type="button" name="button" (click)="addPost()" >    <i class='fa fa-plus'></i></button>
+    </div>
+  </div>
+  <div class="content">
+    <div class="title">
+      <h2>To Do List</h2>
+      <ul >
+        <li *ngFor="let post of posts | async">
+
+
+
+         {{post.data.content}}
+
+                     <a href="#" (click)="deletePost(post.id)">
+         <span class="glyphicon glyphicon-trash" style="float: right"></span></a>
+         <div class="checkbox" style="display: inline; float: right ; margin: 0px;">
+    <label><input type="checkbox" value="">Mark as done &nbsp;</label>
+    </div>
+       </li>
+      </ul>
+
+    </div>
+
+
+    </div>
+  </div>
